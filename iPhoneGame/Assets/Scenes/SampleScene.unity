@@ -292,6 +292,8 @@ MonoBehaviour:
   cameraTransform: {fileID: 713706923}
   platform: {fileID: 6254874080548026398, guid: 06dcd3c30c5bc498bbe5c0cffb8e3328,
     type: 3}
+  deathCircle: {fileID: 9112434330430990221, guid: be57ad9c8558f8b319f9f337cded5869,
+    type: 3}
   spawnOffset: 8
 --- !u!1 &657391284
 GameObject:
@@ -700,7 +702,7 @@ GameObject:
   - component: {fileID: 1016675502}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

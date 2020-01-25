@@ -15,8 +15,11 @@ public class followPlayer : MonoBehaviour
     void FixedUpdate()
     {
         if (transform.position.y < playerTransform.position.y)
-            transform.position = new Vector2(transform.position.x, playerTransform.position.y);
-        else
-            transform.position = new Vector2(transform.position.x, transform.position.y+speed*Time.deltaTime);
+        {
+            float newPos = transform.position.y + (playerTransform.position.y-transform.position.y)*.025f;
+            transform.position = new Vector2(transform.position.x, newPos);
+        }
+            
+        transform.position = new Vector2(transform.position.x, transform.position.y+speed*Time.deltaTime);
     }
 }
