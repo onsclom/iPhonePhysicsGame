@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6254874080548026387}
   - component: {fileID: 6254874080548026384}
   - component: {fileID: 6254874080548026385}
+  - component: {fileID: -3952791700146649894}
   m_Layer: 0
   m_Name: trianglePlatform (1)
   m_TagString: Untagged
@@ -129,3 +130,15 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &-3952791700146649894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6254874080548026398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fc7fc03dcbf2e4fae33ec106d691d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

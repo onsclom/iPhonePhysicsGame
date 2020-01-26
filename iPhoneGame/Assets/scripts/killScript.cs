@@ -23,8 +23,7 @@ public class killScript : MonoBehaviour
         print("wow");
         if (other.gameObject.tag == "Player")
         {
-            Instantiate(ps, new Vector3 (other.transform.position.x,other.transform.position.y,-5.0f), Quaternion.identity);
-            Destroy(other.gameObject);
+            other.gameObject.GetComponent<playerController>().die();
         }
     }
 }
