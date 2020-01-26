@@ -28,7 +28,7 @@ public class gameManaging : MonoBehaviour
 
     }
 
-    void resetGame() 
+    public void resetGame() 
     {
         SceneManager.LoadScene("SampleScene");
     }

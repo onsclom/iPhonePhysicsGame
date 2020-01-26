@@ -22,6 +22,20 @@ public class playerController : MonoBehaviour
     void Update()
     {
         dir = Input.GetAxisRaw("Horizontal");
+
+        if (Input.touchCount > 0)
+        {
+            print (Input.GetTouch(0).position.x);
+            if (Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position).x > 0)
+            {
+                dir = 1f;
+            }
+            else
+            {
+                print("Wow");
+                dir = -1f;
+            }
+        }
     }
 
     void FixedUpdate()
