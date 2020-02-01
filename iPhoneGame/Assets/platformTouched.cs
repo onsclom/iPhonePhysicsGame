@@ -16,25 +16,12 @@ public class platformTouched : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (color >= 1)
-        {
-            colorAscending = false;
-        }
-        else if (color <= 0)
-        {
-            colorAscending = true;
-        }
-
-        if (colorAscending)
-            color += .01f;
-        else
-            color -= .01f;
 
         Color curColor;
         if (touched)
-            curColor = Color.HSVToRGB(color, .5f, .3f);
+            curColor = Color.HSVToRGB(playerScore.color, .5f, .3f);
         else 
-            curColor = Color.HSVToRGB(color, .5f, 1f);
+            curColor = Color.HSVToRGB(playerScore.color, .5f, 1f);
 
         GetComponent<SpriteRenderer>().color = curColor;
     }

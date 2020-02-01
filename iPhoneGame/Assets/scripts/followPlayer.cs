@@ -22,7 +22,8 @@ public class followPlayer : MonoBehaviour
         {
             if (transform.position.y < playerTransform.position.y)
             {
-                float newPos = transform.position.y + (playerTransform.position.y-transform.position.y)*.025f;
+                //float newPos = transform.position.y + (playerTransform.position.y-transform.position.y)*.025f;
+                float newPos = playerTransform.position.y;
                 transform.position = new Vector2(transform.position.x, newPos);
             }
                 

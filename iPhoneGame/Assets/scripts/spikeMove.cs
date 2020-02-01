@@ -6,7 +6,6 @@ public class spikeMove : MonoBehaviour
 {
     private bool goingRight; //if not then going left
     private float speed;
-    private float color = 0;
     private bool colorAscending = true;
     // Start is called before the first frame update
 
@@ -19,19 +18,11 @@ public class spikeMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (colorAscending && color >= 1)
+        float color = playerScore.color + .25f;
+        if (color > 1f)
         {
-            colorAscending = false;
+            color -= 1;
         }
-        else if (!colorAscending && color <= 0)
-        {
-            colorAscending = true;
-        }
-
-        if (colorAscending)
-            color += .01f;
-        else
-            color -= .01f;
 
 
         Color curColor = Color.HSVToRGB(color, .5f, 1f);
